@@ -1,0 +1,5 @@
+$color: lightblue;
+
+@function vw($px) {
+  @return calc($px / 375) * 100vw;
+}

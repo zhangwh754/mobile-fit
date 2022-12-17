@@ -1,0 +1,75 @@
+@import 'normalize.css';
+@import 'myReset.scss';
+
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  background-color: #f3f3f3;
+}
+
+@media (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+
+.content_box {
+  display: flow-root;
+  width: 10rem;
+  height: 8rem;
+  background: url('../../assets/images/bg.png') no-repeat;
+  background-size: 10rem auto;
+  .fast_operate {
+    width: 9.1467rem;
+    border-radius: 0.32rem;
+    overflow: hidden;
+    margin: 6.8267rem auto 0;
+    .header {
+      background-color: #f4ede5;
+      height: 1.1733rem;
+      h4 {
+        font-size: 0.3733rem;
+        font-weight: 600;
+        color: #794027;
+        line-height: 1.1733rem;
+        padding-left: 0.4267rem;
+      }
+    }
+    .content {
+      height: 4.8rem;
+      ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: #fff;
+        li {
+          flex: 1;
+          border: 1px solid #fff;
+          text-align: center;
+          padding-top: 2.88rem;
+          &:nth-child(1) {
+            background: url('../../assets/images/xiadan.png') center 0.64rem no-repeat;
+            background-size: 1.7067rem 1.7067rem;
+          }
+          &:nth-child(2) {
+            background: url('../../assets/images/saoma.png') center 0.64rem no-repeat;
+            background-size: 1.7067rem 1.7067rem;
+          }
+          h4 {
+            color: #222222;
+            font-size: 0.48rem;
+            font-weight: 600;
+            line-height: 0.6667rem;
+          }
+          span {
+            color: #c2c2c2;
+            font-size: 0.32rem;
+            line-height: 0.4rem;
+          }
+        }
+      }
+    }
+  }
+}
